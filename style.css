@@ -1,25 +1,36 @@
-body {
+html, body {
     margin: 0;
+    height: 100%;
+    z-index: 0;
 }
 
-div {
-    box-sizing: border-box;
+img {
+    display: block;
 }
 
-#main-wrapper{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+.center-width-wrapper {
+    width: 70%;
+    margin-left: auto; margin-right: auto;
+}
+
+.vertical-center-outside {
+    display: table;
+    height: 100%;
+}
+
+.vertical-center-inside {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #header {
-    position: relative;
-    left: -12.5%;
-    width: 125%; height: 600px;
-    padding: 20% 12.5%;
-    text-align: right;
-    vertical-align: middle;
-
+    height: 800px;
     color: whitesmoke;
-    background-image: url(assets/vincent.jpg);
+    text-align: right;
+}
+
+#header>img {
+    position: fixed;
+    z-index: -1;
+    height: 100%;
 }

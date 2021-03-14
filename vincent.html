@@ -3,19 +3,30 @@
     <title>VINCENT'S UNBEARABLY COOL PORTFOLIO WEBSITE</title>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        document.documentElement.style.setProperty('--width', document.body.innerWidth() + 'px');
+        $('#age').text($('body').prop('innerWidth'));
+    </script> -->
 </head>
 
 <body>
-    <div id="main-wrapper">
-        <div id="header">
-            <h1>VINCENT</h1>
-            <h2>THAT is me.</h2>
+    <div id="header">
+        <img src="assets/vincent.jpg" alt="vincent">
+        <div class="center-width-wrapper vertical-center-outside" class="">
+            <div class="vertical-center-inside">
+                <h1>VINCENT</h1>
+                <h2>THAT is me.</h2>
+            </div>  
         </div>
+    </div>
+    <div class="center-width-wrapper">
         <hr>
         <h3>Who the heck is that?</h3>
         <p>
-            It's Vincent Boling. I'm <!-- TODO: updating age --> <b>14</b>. I'm a <b>ninth grader</b> at Gunn 
-            High School living in <b>Palo Alto, California</b>. I do
+            It's Vincent Boling. I'm <!-- TODO: updating age --><span id="age"><b>14</b></span>.
+            I'm a <b>ninth grader</b> at Gunn High School living in <b>Palo Alto, California</b>. 
+            I do
         </p> 
         <ul>
             <li>computer science</li>
@@ -25,8 +36,8 @@
             <ul><li><i>inquire for song commisions... I guess.</i></li></ul>
         </ul>
         <p>
-            In the future I want to approach issues like climate change and marginalized groups. I want to
-            learn more about fusion energy, biofuels, and how to change the world.
+            In the future I want to approach issues like climate change and marginalized groups.
+            I want to learn more about fusion energy, biofuels, and how to change the world.
         </p>
         <h3>My projects:</h3>
         <ul>
