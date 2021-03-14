@@ -27,19 +27,17 @@ img {
     position: relative;
     height: 75%;
     max-height: 800px;
+}
+#header>div { 
+    position: relative;
     color: whitesmoke;
     text-align: right;
+    width: 100%;
 }
-
-#header>div { 
-    position: relative; 
-    top: 0; left: 0;
-    z-index: 2
-}
-#header>div * { z-index: 2 }
-
 #header>img {
     position: absolute;
-    z-index: -1;
+    left: -90px;
+    width: 120%;
     height: 100%;
+    object-fit: cover;
 }
