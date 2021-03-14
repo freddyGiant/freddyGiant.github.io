@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     height: 100%;
-    z-index: 0;
+    z-index: 1;
 }
 
 img {
@@ -24,13 +24,22 @@ img {
 }
 
 #header {
-    height: 800px;
+    position: relative;
+    height: 75%;
+    max-height: 800px;
     color: whitesmoke;
     text-align: right;
 }
 
+#header>div { 
+    position: relative; 
+    top: 0; left: 0;
+    z-index: 2
+}
+#header>div * { z-index: 2 }
+
 #header>img {
-    position: fixed;
+    position: absolute;
     z-index: -1;
     height: 100%;
 }
