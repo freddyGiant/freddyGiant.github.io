@@ -1,21 +1,24 @@
 <!DOCTYPE html lang="en">
 <head>
     <title>VINCENT'S UNBEARABLY COOL PORTFOLIO WEBSITE</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport">
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="header">
-        <img src="assets/vincent.jpg" alt="vincent">
-        <div class="vertical-center-outside">
+    <div id="header" class="vertical-center-outside" style="background-image: url(assets/vincent.jpg);">
+        <!-- <img src="assets/vincent.jpg" alt="vincent"> -->
+        <!-- <div class="vertical-center-outside"> -->
             <div class="vertical-center-inside">
-                <h1>VINCENT</h1>
-                <h2>THAT is me.</h2>
-            </div>  
-        </div>
+                <div class="center-width-wrapper">
+                    <h1>VINCENT</h1>
+                    <h2>THAT is me.</h2>
+                </div>
+            </div>
+        <!-- </div> -->
     </div>
     <div class="center-width-wrapper">
+        <!-- <hr> -->
         <h3>Who the heck is that?</h3>
         <p>
             It's Vincent Boling. I'm <!-- TODO: updating age --><span id="age"><b>14</b></span>.
@@ -24,7 +27,7 @@
         </p> 
         <ul>
             <li>computer science</li>
-            <li>web development (frontend and backend)</li>
+            <li>web development (frontend and backend) <i>(I built this website)</i></li>
             <li>film and video media stuff (I can navigate your studio AND be creative!)</li>
             <li>and music</li>
             <ul><li><i>inquire for song commisions... I guess.</i></li></ul>
@@ -33,7 +36,8 @@
             In the future I want to approach issues like climate change and marginalized groups.
             I want to learn more about fusion energy, biofuels, and how to change the world.
         </p>
-        <h3>My projects:</h3>
+        <hr>
+        <h3 style="font-weight: normal;">My projects:</h3>
         <ul>
             <li>opticoin || a FREE crypto transaction lot optimizing tool!</li>
             <li>study-bot || a discord bot for audio accessibility!</li>
