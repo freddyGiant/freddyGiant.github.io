@@ -18,12 +18,12 @@
         <!-- </div> -->
     </div>
     <div class="center-width-wrapper">
-        <div style="float: left; width: 70%">
+        <div>
             <h3>Who is that?</h3>
             <p>
-                It's Vincent Boling. I'm <span id="age"><b>14</b></span>.
-                I'm a <b>ninth grader</b> at Gunn High School living in <b>Palo Alto, California</b>. 
-                I do
+                It's <b>Vincent Boling</b>. I'm
+                <span id="age"><b>14</b></span> and I use he/him pronouns. I'm a <b>ninth grader</b>
+                at Gunn High School living in <b>Palo Alto, California</b>. I do
             </p> 
             <ul>
                 <li>computer science</li>
@@ -43,7 +43,7 @@
                 <li>study-bot || a discord bot for audio accessibility!</li>
             </ul>
         </div>
-        <div style="float: right; width: 25%;">
+        <div>
             <h3>Where can I find him?</h3>
             <ul>
                 <a href="mailto:vincyfboling@gmail.com" target="_blank">
@@ -59,4 +59,8 @@
             </ul>
         </div>
     </div>
+    <script>
+        /*                                                                  bday ms          one year in ms */
+        document.getElementById("age").innerText = Math.floor((Date.now() - 1158994800000) / 34243200000) + 1;
+    </script>
 </body>
