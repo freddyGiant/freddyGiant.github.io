@@ -127,6 +127,7 @@ body>.center-width-wrapper>div:nth-of-type(2) ul /* link column */ {
     
     h3 {
         font-size: 20pt;
+        margin-top: 0;
     }
     p {
         line-height: 200%;
